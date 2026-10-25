@@ -1,0 +1,7 @@
+services:
+  love-website:
+    build: .
+    container_name: ganesh-kalaivani-love
+    restart: unless-stopped
+    ports:
+      - "8080:80"

@@ -1,0 +1,2087 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Ganesh ♥ Kalaivani — Eternal Rose & Love Tree Romantic Gift</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Luxury Romantic Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel+Decorative:wght@700;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        :root {
+            --rose-deep: #2a030d;
+            --rose-crimson: #990a2c;
+            --rose-bright: #ff1e56;
+            --rose-soft: #ff7597;
+            --gold-warm: #ffd166;
+            --gold-luxury: #f4c430;
+        }
+
+        * {
+            box-sizing: border-box;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: radial-gradient(ellipse at 50% 45%, #3d0618 0%, #1d020b 55%, #0b0105 100%);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            color: #fff5f7;
+            perspective: 1400px;
+        }
+
+        /* Fonts */
+        .font-script {
+            font-family: 'Alex Brush', cursive;
+        }
+
+        .font-cinzel {
+            font-family: 'Cinzel Decorative', serif;
+        }
+
+        .font-serif-luxury {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        /* 1. GLOWING 3D COUPLE NAMES IN THE BACKGROUND */
+        .bg-names-stage {
+            position: fixed;
+            inset: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            pointer-events: none;
+            z-index: 4;
+            transform-style: preserve-3d;
+            transition: transform 0.15s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .bg-couple-title {
+            font-family: 'Cinzel Decorative', serif;
+            font-weight: 900;
+            font-size: clamp(2.6rem, 7.8vw, 7.6rem);
+            line-height: 1.05;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-align: center;
+            color: rgba(255, 235, 242, 0.22);
+            text-shadow:
+                0 0 18px rgba(255, 30, 86, 0.55),
+                0 0 40px rgba(255, 30, 86, 0.45),
+                0 0 85px rgba(225, 29, 72, 0.4),
+                0 6px 25px rgba(0, 0, 0, 0.85);
+            -webkit-text-stroke: 1.5px rgba(255, 194, 212, 0.38);
+            animation: breatheNameGlow 5s ease-in-out infinite alternate;
+            padding: 0 20px;
+            max-width: 94vw;
+            word-break: break-word;
+        }
+
+        .bg-couple-subtitle {
+            font-family: 'Alex Brush', cursive;
+            font-size: clamp(1.7rem, 3.6vw, 3.3rem);
+            color: rgba(255, 209, 102, 0.42);
+            text-shadow:
+                0 0 18px rgba(255, 209, 102, 0.45),
+                0 0 45px rgba(255, 42, 95, 0.4);
+            margin-top: -0.2rem;
+            letter-spacing: 0.04em;
+        }
+
+        @keyframes breatheNameGlow {
+            0% {
+                color: rgba(255, 230, 238, 0.18);
+                text-shadow:
+                    0 0 15px rgba(255, 30, 86, 0.45),
+                    0 0 38px rgba(255, 30, 86, 0.35),
+                    0 0 75px rgba(255, 180, 100, 0.25),
+                    0 8px 30px rgba(0, 0, 0, 0.9);
+                transform: translateZ(-50px) scale(0.99);
+            }
+
+            100% {
+                color: rgba(255, 240, 245, 0.32);
+                text-shadow:
+                    0 0 22px rgba(255, 55, 105, 0.8),
+                    0 0 55px rgba(255, 30, 86, 0.65),
+                    0 0 110px rgba(255, 209, 102, 0.45),
+                    0 12px 35px rgba(0, 0, 0, 0.95);
+                transform: translateZ(-20px) scale(1.02);
+            }
+        }
+
+        /* 2. ORNATE BORDER FRAME FULL OF ROSES & LOVE HEARTS */
+        .rose-border-frame {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 25;
+            overflow: hidden;
+        }
+
+        /* Glowing inner golden-rose frame lines */
+        .rose-border-inner-line {
+            position: absolute;
+            inset: 14px;
+            border: 2px solid rgba(255, 185, 205, 0.28);
+            border-radius: 28px;
+            box-shadow:
+                inset 0 0 45px rgba(255, 20, 75, 0.35),
+                0 0 35px rgba(255, 20, 75, 0.35);
+        }
+
+        .rose-border-inner-line::after {
+            content: '';
+            position: absolute;
+            inset: 6px;
+            border: 1px dashed rgba(255, 209, 102, 0.32);
+            border-radius: 22px;
+        }
+
+        /* Swaying animations for border roses */
+        .rose-cluster-sway {
+            animation: swayCluster 6s ease-in-out infinite alternate;
+            transform-origin: center;
+        }
+
+        .rose-cluster-sway-slow {
+            animation: swayCluster 8.5s ease-in-out infinite alternate-reverse;
+            transform-origin: center;
+        }
+
+        @keyframes swayCluster {
+            0% {
+                transform: rotate(-2deg) scale(1);
+            }
+
+            100% {
+                transform: rotate(2.5deg) scale(1.03);
+            }
+        }
+
+        /* 3. DUAL COUPLE PHOTO FRAMES WITH ROSES & 3D TILT */
+        .couple-stage-wrapper {
+            position: relative;
+            z-index: 15;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 3.5rem 1.5rem 4.5rem 1.5rem;
+            pointer-events: none;
+        }
+
+        /* Shift slightly left on wide screens so the Right-Corner Love Tree has majestic breathing room */
+        @media (min-width: 1024px) {
+            .couple-stage-wrapper {
+                padding-right: 18vw;
+            }
+        }
+
+        .photo-frame-card {
+            pointer-events: auto;
+            position: relative;
+            width: clamp(210px, 24vw, 295px);
+            height: clamp(265px, 31vw, 370px);
+            border-radius: 150px 150px 32px 32px;
+            background: linear-gradient(145deg, rgba(95, 8, 35, 0.85), rgba(32, 3, 12, 0.92));
+            padding: 12px;
+            box-shadow:
+                0 22px 50px rgba(0, 0, 0, 0.75),
+                0 0 35px rgba(255, 30, 86, 0.4),
+                inset 0 0 22px rgba(255, 209, 102, 0.35);
+            border: 2.5px solid rgba(255, 209, 102, 0.65);
+            transform-style: preserve-3d;
+            transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .photo-frame-card:hover {
+            box-shadow:
+                0 28px 65px rgba(0, 0, 0, 0.85),
+                0 0 55px rgba(255, 42, 102, 0.75),
+                inset 0 0 30px rgba(255, 215, 115, 0.55);
+        }
+
+        .photo-frame-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 140px 140px 22px 22px;
+            overflow: hidden;
+            border: 2px solid rgba(255, 182, 193, 0.45);
+            background: #1a020a;
+        }
+
+        .photo-frame-inner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .photo-frame-card:hover .photo-frame-inner img {
+            transform: scale(1.06);
+        }
+
+        /* Shimmer sweep across couple frames */
+        .photo-frame-inner::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(125deg, transparent 30%, rgba(255, 255, 255, 0.18) 48%, transparent 65%);
+            transform: translateX(-120%);
+            animation: frameShimmer 6.5s infinite;
+            pointer-events: none;
+        }
+
+        @keyframes frameShimmer {
+
+            0%,
+            65% {
+                transform: translateX(-120%);
+            }
+
+            100% {
+                transform: translateX(120%);
+            }
+        }
+
+        /* Center Heart Bridge between the Two Frames */
+        .heart-bridge {
+            pointer-events: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0 -8px;
+            z-index: 20;
+        }
+
+        .pulse-heart-orb {
+            width: 72px;
+            height: 72px;
+            border-radius: 9999px;
+            background: radial-gradient(circle at 30% 30%, #ff5c8a, #d90429 65%, #690218 100%);
+            border: 2.5px solid rgba(255, 215, 130, 0.85);
+            box-shadow:
+                0 0 25px rgba(255, 30, 86, 0.9),
+                0 0 55px rgba(255, 30, 86, 0.5),
+                inset 0 0 15px rgba(255, 255, 255, 0.45);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: heartbeatOrb 1.6s infinite ease-in-out;
+            cursor: pointer;
+        }
+
+        @keyframes heartbeatOrb {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            18% {
+                transform: scale(1.14);
+            }
+
+            34% {
+                transform: scale(0.96);
+            }
+
+            50% {
+                transform: scale(1.09);
+            }
+        }
+
+        /* 4. CLICK ANYWHERE TO SPAWN FLOATING PHOTOS */
+        #spawnedPhotosLayer {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            z-index: 22;
+            overflow: hidden;
+        }
+
+        .spawned-photo-card {
+            position: absolute;
+            width: clamp(145px, 17vw, 195px);
+            background: linear-gradient(160deg, #fff8fa 0%, #ffe3ec 100%);
+            padding: 9px 9px 28px 9px;
+            border-radius: 14px;
+            box-shadow:
+                0 18px 40px rgba(0, 0, 0, 0.75),
+                0 0 28px rgba(255, 30, 86, 0.65),
+                0 0 0 2px rgba(255, 209, 102, 0.75);
+            transform: translate(-50%, -50%) scale(0) rotate(0deg);
+            pointer-events: auto;
+            cursor: grab;
+            transition: box-shadow 0.25s ease;
+            animation: popAndFloatPhoto 5.8s cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards;
+        }
+
+        .spawned-photo-card.pinned {
+            animation: pinnedPhotoHover 4s ease-in-out infinite alternate !important;
+            box-shadow:
+                0 22px 50px rgba(0, 0, 0, 0.85),
+                0 0 35px rgba(255, 209, 102, 0.85),
+                0 0 0 2.5px #ffd166;
+            z-index: 24;
+        }
+
+        @keyframes popAndFloatPhoto {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.15) rotate(var(--start-rot, -15deg));
+            }
+
+            12% {
+                opacity: 1;
+                transform: translate(-50%, -54%) scale(1.06) rotate(var(--end-rot, 6deg));
+            }
+
+            20% {
+                opacity: 1;
+                transform: translate(-50%, -52%) scale(1) rotate(var(--end-rot, 6deg));
+            }
+
+            82% {
+                opacity: 1;
+                transform: translate(calc(-50% + var(--drift-x, 20px)), calc(-50% - 75px)) scale(0.98) rotate(calc(var(--end-rot, 6deg) * 1.2));
+            }
+
+            100% {
+                opacity: 0;
+                transform: translate(calc(-50% + var(--drift-x, 20px)), calc(-50% - 125px)) scale(0.75) rotate(calc(var(--end-rot, 6deg) * 1.5));
+            }
+        }
+
+        @keyframes pinnedPhotoHover {
+            0% {
+                transform: translate(-50%, -52%) scale(1) rotate(var(--end-rot, 4deg));
+            }
+
+            100% {
+                transform: translate(-50%, -58%) scale(1.03) rotate(calc(var(--end-rot, 4deg) + 2deg));
+            }
+        }
+
+        /* 5. PROMISE LETTER MODAL & PARCHMENT STYLING */
+        .promise-modal-backdrop {
+            position: fixed;
+            inset: 0;
+            background: rgba(12, 1, 6, 0.82);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            z-index: 60;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+
+        .promise-modal-backdrop.active {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .parchment-letter {
+            background:
+                radial-gradient(circle at top right, rgba(255, 224, 233, 0.95), rgba(255, 245, 247, 0.98) 60%),
+                linear-gradient(135deg, #fff7f9 0%, #ffeef3 100%);
+            color: #3b0718;
+            border: 3px solid #e3a857;
+            box-shadow:
+                0 30px 90px rgba(0, 0, 0, 0.85),
+                0 0 65px rgba(255, 30, 86, 0.55),
+                inset 0 0 40px rgba(217, 4, 41, 0.08);
+            border-radius: 26px;
+            max-width: 680px;
+            width: 100%;
+            max-height: 90vh;
+            overflow-y: auto;
+            position: relative;
+            transform: scale(0.88) translateY(24px);
+            transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+
+        .promise-modal-backdrop.active .parchment-letter {
+            transform: scale(1) translateY(0);
+        }
+
+        /* Custom Scrollbar for Parchment & Studio */
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: rgba(42, 3, 13, 0.2);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: rgba(225, 29, 72, 0.55);
+            border-radius: 9999px;
+        }
+
+        /* Typewriter cursor */
+        .typewriter-cursor {
+            display: inline-block;
+            width: 2px;
+            height: 1.2em;
+            background-color: #d90429;
+            vertical-align: text-bottom;
+            margin-left: 3px;
+            animation: blinkCursor 0.8s steps(2, start) infinite;
+        }
+
+        @keyframes blinkCursor {
+            to {
+                visibility: hidden;
+            }
+        }
+
+        /* Floating HUD Glass Pill */
+        .glass-pill {
+            background: rgba(42, 4, 18, 0.72);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 190, 208, 0.32);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 30, 86, 0.25);
+        }
+
+        /* Hide Edit UI when in Gift Mode */
+        body.gift-mode .edit-only-ui {
+            opacity: 0 !important;
+            pointer-events: none !important;
+            transform: scale(0.85);
+        }
+
+        /* Responsive adjustments for smaller mobile screens */
+        @media (max-width: 768px) {
+            .photo-frame-card {
+                width: 148px;
+                height: 192px;
+                padding: 8px;
+            }
+
+            .pulse-heart-orb {
+                width: 50px;
+                height: 50px;
+            }
+
+            .rose-border-inner-line {
+                inset: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body class="relative select-none">
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 1: GLOWING 3D COUPLE NAMES IN THE BACKGROUND                    -->
+    <!-- ===================================================================== -->
+    <div id="bgNamesStage" class="bg-names-stage">
+        <div class="text-xs md:text-sm uppercase tracking-[0.45em] text-rose-300/50 mb-2 font-semibold">
+            ✦ Written In The Stars Forever ✦
+        </div>
+        <h1 id="bgCoupleNamesText" class="bg-couple-title">
+            GANESH <span class="text-rose-500/60">♥</span> KALAIVANI
+        </h1>
+        <p id="bgCoupleTaglineText" class="bg-couple-subtitle">
+            Every Heartbeat Whispers Your Name
+        </p>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 2: MAIN INTERACTIVE 3D CANVAS (RIGHT-CORNER LOVE TREE & HEARTS) -->
+    <!-- ===================================================================== -->
+    <canvas id="loveTreeCanvas" class="fixed inset-0 w-full h-full z-10 cursor-pointer"></canvas>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 3: DYNAMIC CLICK-ANYWHERE SPAWNED PHOTOS CONTAINER              -->
+    <!-- ===================================================================== -->
+    <div id="spawnedPhotosLayer"></div>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 4: CENTERPIECE DUAL COUPLE FRAMES WRAPPED IN ROSES & HEARTS     -->
+    <!-- ===================================================================== -->
+    <main class="couple-stage-wrapper">
+        <!-- Top Romantic Banner Pill -->
+        <div
+            class="pointer-events-auto glass-pill px-5 py-2 rounded-full mb-5 md:mb-7 flex items-center gap-3 border border-rose-300/30 animate-fade-in">
+            <span class="inline-block w-2.5 h-2.5 rounded-full bg-rose-500 animate-ping"></span>
+            <span id="topBannerText" class="text-xs md:text-sm font-medium tracking-wider text-rose-100">
+                Click <strong class="text-amber-300">Anywhere</strong> for Memories • Click a <strong
+                    class="text-rose-400">Falling Red Heart</strong> for My Promise Letter
+            </span>
+        </div>
+
+        <!-- Dual Frames Row -->
+        <div class="flex flex-row items-center justify-center gap-2 sm:gap-5 md:gap-8 relative">
+
+            <!-- LEFT FRAME: Partner 1 (Male / Partner A) -->
+            <div class="relative group">
+                <div id="frameCardLeft" class="photo-frame-card" data-tilt>
+                    <!-- Decorative Top Crown Rose & Hearts SVG -->
+                    <svg class="absolute -top-7 left-1/2 -translate-x-1/2 w-32 h-16 z-30 pointer-events-none drop-shadow-[0_6px_12px_rgba(0,0,0,0.7)]"
+                        viewBox="0 0 200 90">
+                        <!-- Golden Vine Leaves -->
+                        <path d="M20,65 Q60,20 100,45 Q140,20 180,65" fill="none" stroke="#ffd166" stroke-width="3"
+                            stroke-linecap="round" />
+                        <path d="M45,52 C30,35 55,22 68,42 Z" fill="#1b4332" stroke="#ffd166" stroke-width="1" />
+                        <path d="M155,52 C170,35 145,22 132,42 Z" fill="#1b4332" stroke="#ffd166" stroke-width="1" />
+                        <!-- Left Mini Rose -->
+                        <circle cx="62" cy="48" r="16" fill="#b90e38" />
+                        <path d="M54,44 Q62,34 70,44 Q66,56 54,48 Z" fill="#ff2a5f" />
+                        <!-- Right Mini Rose -->
+                        <circle cx="138" cy="48" r="16" fill="#b90e38" />
+                        <path d="M130,44 Q138,34 146,44 Q142,56 130,48 Z" fill="#ff2a5f" />
+                        <!-- Center Blooming Rose & Heart -->
+                        <circle cx="100" cy="42" r="24" fill="#800522" />
+                        <circle cx="100" cy="40" r="19" fill="#d90429" />
+                        <path d="M88,38 Q100,22 112,38 Q105,54 88,44 Z" fill="#ff4d79" />
+                        <path d="M94,39 Q100,31 106,39 Q102,46 94,41 Z" fill="#ffccd5" />
+                    </svg>
+
+                    <!-- Photo Container -->
+                    <div class="photo-frame-inner">
+                        <img id="partner1Img"
+                            src="photos/photo7_ganesh_solo.jpg"
+                            alt="Ganesh Photo" />
+                        <!-- Subtle Bottom Gradient for Name Label -->
+                        <div
+                            class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/90 via-black/45 to-transparent flex flex-col justify-end items-center pb-3 px-2">
+                            <span id="partner1NameBadge"
+                                class="font-cinzel text-sm md:text-lg font-bold tracking-wider text-amber-200 drop-shadow">
+                                GANESH
+                            </span>
+                            <span id="partner1RoleBadge"
+                                class="text-[10px] md:text-xs text-rose-200/80 tracking-widest uppercase">
+                                Forever Yours
+                            </span>
+                        </div>
+
+                        <!-- Instant Upload Button Overlay (Hidden in Gift Mode) -->
+                        <label for="uploadPartner1Input"
+                            class="edit-only-ui absolute top-3 right-3 z-30 bg-rose-950/85 hover:bg-rose-600 text-rose-100 border border-amber-300/60 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg cursor-pointer transition-all duration-200">
+                            <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                                <circle cx="12" cy="13" r="3" />
+                            </svg>
+                            <span>Photo 1</span>
+                        </label>
+                        <input id="uploadPartner1Input" type="file" accept="image/*" class="hidden" />
+                    </div>
+
+                    <!-- Bottom Corner Rose Garland SVG -->
+                    <svg class="absolute -bottom-5 -left-5 w-24 h-24 z-30 pointer-events-none drop-shadow-lg"
+                        viewBox="0 0 100 100">
+                        <circle cx="38" cy="62" r="22" fill="#8f0728" />
+                        <circle cx="38" cy="60" r="16" fill="#e6194b" />
+                        <path d="M28,58 Q38,44 48,58 Q42,72 28,62 Z" fill="#ff5c8a" />
+                        <circle cx="66" cy="72" r="14" fill="#b80d38" />
+                        <path d="M60,70 Q66,60 73,70 Q68,78 60,73 Z" fill="#ff7597" />
+                    </svg>
+                </div>
+            </div>
+
+            <!-- CENTER: Glowing Heartbeat Bridge & Direct Promise Trigger -->
+            <div class="heart-bridge">
+                <button id="centerHeartBridgeBtn" title="Click to Open My Promise Letter"
+                    class="pulse-heart-orb group relative focus:outline-none">
+                    <svg class="w-9 h-9 md:w-11 md:h-11 text-amber-100 drop-shadow-[0_2px_8px_rgba(255,255,255,0.8)] transition-transform group-hover:scale-110"
+                        viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                    </svg>
+                    <span
+                        class="absolute -bottom-7 whitespace-nowrap text-[10px] md:text-xs font-semibold tracking-wider text-amber-200 bg-rose-950/90 px-2.5 py-0.5 rounded-full border border-amber-300/40 shadow">
+                        💌 Promise
+                    </span>
+                </button>
+            </div>
+
+            <!-- RIGHT FRAME: Partner 2 (Female / Partner B) -->
+            <div class="relative group">
+                <div id="frameCardRight" class="photo-frame-card" data-tilt>
+                    <!-- Decorative Top Crown Rose & Hearts SVG -->
+                    <svg class="absolute -top-7 left-1/2 -translate-x-1/2 w-32 h-16 z-30 pointer-events-none drop-shadow-[0_6px_12px_rgba(0,0,0,0.7)]"
+                        viewBox="0 0 200 90">
+                        <path d="M20,65 Q60,20 100,45 Q140,20 180,65" fill="none" stroke="#ffd166" stroke-width="3"
+                            stroke-linecap="round" />
+                        <path d="M45,52 C30,35 55,22 68,42 Z" fill="#1b4332" stroke="#ffd166" stroke-width="1" />
+                        <path d="M155,52 C170,35 145,22 132,42 Z" fill="#1b4332" stroke="#ffd166" stroke-width="1" />
+                        <circle cx="62" cy="48" r="16" fill="#b90e38" />
+                        <path d="M54,44 Q62,34 70,44 Q66,56 54,48 Z" fill="#ff2a5f" />
+                        <circle cx="138" cy="48" r="16" fill="#b90e38" />
+                        <path d="M130,44 Q138,34 146,44 Q142,56 130,48 Z" fill="#ff2a5f" />
+                        <circle cx="100" cy="42" r="24" fill="#800522" />
+                        <circle cx="100" cy="40" r="19" fill="#d90429" />
+                        <path d="M88,38 Q100,22 112,38 Q105,54 88,44 Z" fill="#ff4d79" />
+                        <path d="M94,39 Q100,31 106,39 Q102,46 94,41 Z" fill="#ffccd5" />
+                    </svg>
+
+                    <!-- Photo Container -->
+                    <div class="photo-frame-inner">
+                        <img id="partner2Img"
+                            src="photos/photo3_vani_purple.jpg"
+                            alt="Kalaivani Photo" />
+                        <!-- Subtle Bottom Gradient for Name Label -->
+                        <div
+                            class="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/90 via-black/45 to-transparent flex flex-col justify-end items-center pb-3 px-2">
+                            <span id="partner2NameBadge"
+                                class="font-cinzel text-sm md:text-lg font-bold tracking-wider text-amber-200 drop-shadow">
+                                KALAIVANI
+                            </span>
+                            <span id="partner2RoleBadge"
+                                class="text-[10px] md:text-xs text-rose-200/80 tracking-widest uppercase">
+                                My Queen ♥
+                            </span>
+                        </div>
+
+                        <!-- Instant Upload Button Overlay (Hidden in Gift Mode) -->
+                        <label for="uploadPartner2Input"
+                            class="edit-only-ui absolute top-3 right-3 z-30 bg-rose-950/85 hover:bg-rose-600 text-rose-100 border border-amber-300/60 rounded-full px-3 py-1.5 text-xs font-semibold flex items-center gap-1.5 shadow-lg cursor-pointer transition-all duration-200">
+                            <svg class="w-3.5 h-3.5 text-amber-300" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                                <circle cx="12" cy="13" r="3" />
+                            </svg>
+                            <span>Photo 2</span>
+                        </label>
+                        <input id="uploadPartner2Input" type="file" accept="image/*" class="hidden" />
+                    </div>
+
+                    <!-- Bottom Right Corner Rose Garland SVG -->
+                    <svg class="absolute -bottom-5 -right-5 w-24 h-24 z-30 pointer-events-none drop-shadow-lg"
+                        viewBox="0 0 100 100">
+                        <circle cx="62" cy="62" r="22" fill="#8f0728" />
+                        <circle cx="62" cy="60" r="16" fill="#e6194b" />
+                        <path d="M52,58 Q62,44 72,58 Q66,72 52,62 Z" fill="#ff5c8a" />
+                        <circle cx="34" cy="72" r="14" fill="#b80d38" />
+                        <path d="M27,70 Q34,60 40,70 Q35,78 27,73 Z" fill="#ff7597" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Romantic Callout Below Frames -->
+        <div class="mt-8 pointer-events-auto flex flex-wrap items-center justify-center gap-3">
+            <button id="openPromiseBannerBtn"
+                class="glass-pill hover:bg-rose-800/80 text-amber-100 border border-amber-300/50 px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold tracking-wide flex items-center gap-2.5 shadow-xl transition-all hover:scale-105 active:scale-95">
+                <span class="text-base">❤️</span>
+                <span>Click Any Falling Heart Leaf (or Here) to Read Live Promise Letter</span>
+            </button>
+        </div>
+    </main>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 5: LUXURIOUS ORNATE BORDER FRAME FULL OF ROSES & LOVE HEARTS     -->
+    <!-- ===================================================================== -->
+    <div class="rose-border-frame" aria-hidden="true">
+        <div class="rose-border-inner-line"></div>
+
+        <!-- TOP-LEFT RICH ROSE & HEART BOUQUET CORNER -->
+        <svg class="absolute -top-4 -left-4 w-52 h-52 md:w-72 md:h-72 rose-cluster-sway drop-shadow-[0_10px_25px_rgba(0,0,0,0.85)]"
+            viewBox="0 0 300 300">
+            <!-- Deep Emerald Foliage & Golden Vines -->
+            <path d="M10,240 Q45,120 120,60 Q180,25 260,15" fill="none" stroke="#ffd166" stroke-width="3.5"
+                stroke-opacity="0.7" />
+            <path d="M25,180 C65,155 75,115 35,105 C15,125 15,160 25,180 Z" fill="#143625" stroke="#eab308"
+                stroke-width="1" />
+            <path d="M110,45 C145,75 185,65 190,25 C160,12 125,20 110,45 Z" fill="#143625" stroke="#eab308"
+                stroke-width="1" />
+            <path d="M75,120 C125,125 135,85 95,65 Z" fill="#1e4d35" />
+            <!-- Hanging Glowing Hearts -->
+            <path d="M195,55 C195,46 183,42 178,50 C173,42 161,46 161,55 C161,66 178,76 178,76 C178,76 195,66 195,55 Z"
+                fill="#ff1e56" stroke="#ffd166" stroke-width="1.5" />
+            <path d="M68,195 C68,187 58,184 54,191 C50,184 40,187 40,195 C40,204 54,212 54,212 C54,212 68,204 68,195 Z"
+                fill="#ff4d79" stroke="#ffd166" stroke-width="1.2" />
+            <!-- Grand Corner Crimson Rose -->
+            <g transform="translate(65,65)">
+                <circle cx="0" cy="0" r="46" fill="#590219" />
+                <circle cx="-4" cy="-3" r="37" fill="#9e082f" />
+                <path d="M-28,-12 Q0,-42 28,-12 Q18,28 -28,12 Z" fill="#d90429" />
+                <path d="M-18,-8 Q0,-28 18,-8 Q10,16 -18,8 Z" fill="#ff2a5f" />
+                <path d="M-9,-3 Q0,-15 9,-3 Q5,8 -9,4 Z" fill="#ff8fa3" />
+            </g>
+            <!-- Secondary Top Rose -->
+            <g transform="translate(135,42)">
+                <circle cx="0" cy="0" r="32" fill="#6b041f" />
+                <circle cx="0" cy="-2" r="25" fill="#c90c3b" />
+                <path d="M-18,-8 Q0,-26 18,-8 Q10,18 -18,8 Z" fill="#ff3b6b" />
+                <circle cx="0" cy="-2" r="7" fill="#ffb3c1" />
+            </g>
+            <!-- Secondary Left Vertical Rose -->
+            <g transform="translate(42,138)">
+                <circle cx="0" cy="0" r="30" fill="#6b041f" />
+                <circle cx="0" cy="-2" r="23" fill="#c90c3b" />
+                <path d="M-16,-6 Q0,-24 16,-6 Q8,16 -16,6 Z" fill="#ff3b6b" />
+                <circle cx="0" cy="-2" r="6" fill="#ffb3c1" />
+            </g>
+        </svg>
+
+        <!-- TOP-RIGHT RICH ROSE & HEART BOUQUET CORNER -->
+        <svg class="absolute -top-4 -right-4 w-52 h-52 md:w-72 md:h-72 rose-cluster-sway-slow drop-shadow-[0_10px_25px_rgba(0,0,0,0.85)]"
+            viewBox="0 0 300 300">
+            <g transform="scale(-1, 1) translate(-300, 0)">
+                <path d="M10,240 Q45,120 120,60 Q180,25 260,15" fill="none" stroke="#ffd166" stroke-width="3.5"
+                    stroke-opacity="0.7" />
+                <path d="M25,180 C65,155 75,115 35,105 C15,125 15,160 25,180 Z" fill="#143625" stroke="#eab308"
+                    stroke-width="1" />
+                <path d="M110,45 C145,75 185,65 190,25 C160,12 125,20 110,45 Z" fill="#143625" stroke="#eab308"
+                    stroke-width="1" />
+                <path
+                    d="M195,55 C195,46 183,42 178,50 C173,42 161,46 161,55 C161,66 178,76 178,76 C178,76 195,66 195,55 Z"
+                    fill="#ff1e56" stroke="#ffd166" stroke-width="1.5" />
+                <g transform="translate(65,65)">
+                    <circle cx="0" cy="0" r="46" fill="#590219" />
+                    <circle cx="-4" cy="-3" r="37" fill="#9e082f" />
+                    <path d="M-28,-12 Q0,-42 28,-12 Q18,28 -28,12 Z" fill="#d90429" />
+                    <path d="M-18,-8 Q0,-28 18,-8 Q10,16 -18,8 Z" fill="#ff2a5f" />
+                    <path d="M-9,-3 Q0,-15 9,-3 Q5,8 -9,4 Z" fill="#ff8fa3" />
+                </g>
+                <g transform="translate(135,42)">
+                    <circle cx="0" cy="0" r="32" fill="#6b041f" />
+                    <circle cx="0" cy="-2" r="25" fill="#c90c3b" />
+                    <path d="M-18,-8 Q0,-26 18,-8 Q10,18 -18,8 Z" fill="#ff3b6b" />
+                </g>
+                <g transform="translate(42,138)">
+                    <circle cx="0" cy="0" r="30" fill="#6b041f" />
+                    <circle cx="0" cy="-2" r="23" fill="#c90c3b" />
+                    <path d="M-16,-6 Q0,-24 16,-6 Q8,16 -16,6 Z" fill="#ff3b6b" />
+                </g>
+            </g>
+        </svg>
+
+        <!-- BOTTOM-LEFT RICH ROSE & HEART BOUQUET CORNER -->
+        <svg class="absolute -bottom-4 -left-4 w-52 h-52 md:w-72 md:h-72 rose-cluster-sway-slow drop-shadow-[0_-8px_25px_rgba(0,0,0,0.85)]"
+            viewBox="0 0 300 300">
+            <g transform="scale(1, -1) translate(0, -300)">
+                <path d="M10,240 Q45,120 120,60 Q180,25 260,15" fill="none" stroke="#ffd166" stroke-width="3.5"
+                    stroke-opacity="0.7" />
+                <path d="M25,180 C65,155 75,115 35,105 C15,125 15,160 25,180 Z" fill="#143625" stroke="#eab308"
+                    stroke-width="1" />
+                <path
+                    d="M195,55 C195,46 183,42 178,50 C173,42 161,46 161,55 C161,66 178,76 178,76 C178,76 195,66 195,55 Z"
+                    fill="#ff1e56" stroke="#ffd166" stroke-width="1.5" />
+                <g transform="translate(65,65)">
+                    <circle cx="0" cy="0" r="44" fill="#590219" />
+                    <circle cx="-4" cy="-3" r="35" fill="#9e082f" />
+                    <path d="M-26,-12 Q0,-40 26,-12 Q16,26 -26,12 Z" fill="#d90429" />
+                    <path d="M-16,-8 Q0,-26 16,-8 Q9,14 -16,8 Z" fill="#ff2a5f" />
+                </g>
+                <g transform="translate(135,42)">
+                    <circle cx="0" cy="0" r="30" fill="#6b041f" />
+                    <circle cx="0" cy="-2" r="23" fill="#c90c3b" />
+                    <path d="M-16,-8 Q0,-24 16,-8 Q10,16 -16,8 Z" fill="#ff3b6b" />
+                </g>
+            </g>
+        </svg>
+
+        <!-- BOTTOM-RIGHT RICH ROSE & HEART BOUQUET CORNER -->
+        <svg class="absolute -bottom-4 -right-4 w-52 h-52 md:w-72 md:h-72 rose-cluster-sway drop-shadow-[-8px_-8px_25px_rgba(0,0,0,0.85)]"
+            viewBox="0 0 300 300">
+            <g transform="scale(-1, -1) translate(-300, -300)">
+                <path d="M10,240 Q45,120 120,60 Q180,25 260,15" fill="none" stroke="#ffd166" stroke-width="3.5"
+                    stroke-opacity="0.7" />
+                <path d="M25,180 C65,155 75,115 35,105 C15,125 15,160 25,180 Z" fill="#143625" stroke="#eab308"
+                    stroke-width="1" />
+                <path
+                    d="M195,55 C195,46 183,42 178,50 C173,42 161,46 161,55 C161,66 178,76 178,76 C178,76 195,66 195,55 Z"
+                    fill="#ff1e56" stroke="#ffd166" stroke-width="1.5" />
+                <g transform="translate(65,65)">
+                    <circle cx="0" cy="0" r="44" fill="#590219" />
+                    <circle cx="-4" cy="-3" r="35" fill="#9e082f" />
+                    <path d="M-26,-12 Q0,-40 26,-12 Q16,26 -26,12 Z" fill="#d90429" />
+                    <path d="M-16,-8 Q0,-26 16,-8 Q9,14 -16,8 Z" fill="#ff2a5f" />
+                </g>
+                <g transform="translate(135,42)">
+                    <circle cx="0" cy="0" r="30" fill="#6b041f" />
+                    <circle cx="0" cy="-2" r="23" fill="#c90c3b" />
+                    <path d="M-16,-8 Q0,-24 16,-8 Q10,16 -16,8 Z" fill="#ff3b6b" />
+                </g>
+            </g>
+        </svg>
+
+        <!-- TOP CENTER ROSE & LOVE HEART GARLAND -->
+        <svg class="hidden sm:block absolute -top-3 left-1/2 -translate-x-1/2 w-96 h-20 drop-shadow-[0_8px_20px_rgba(0,0,0,0.8)]"
+            viewBox="0 0 400 90">
+            <path d="M10,15 Q100,65 200,35 Q300,65 390,15" fill="none" stroke="#ffd166" stroke-width="2.5"
+                stroke-opacity="0.75" />
+            <!-- Center Heart Jewel -->
+            <path d="M216,32 C216,22 204,18 200,26 C196,18 184,22 184,32 C184,44 200,56 200,56 C200,56 216,44 216,32 Z"
+                fill="#ff1e56" stroke="#ffd166" stroke-width="2" />
+            <!-- Flanking Roses -->
+            <g transform="translate(140,34)">
+                <circle cx="0" cy="0" r="20" fill="#7a0524" />
+                <circle cx="0" cy="-1" r="15" fill="#d90429" />
+                <path d="M-10,-4 Q0,-16 10,-4 Q6,10 -10,4 Z" fill="#ff4d79" />
+            </g>
+            <g transform="translate(260,34)">
+                <circle cx="0" cy="0" r="20" fill="#7a0524" />
+                <circle cx="0" cy="-1" r="15" fill="#d90429" />
+                <path d="M-10,-4 Q0,-16 10,-4 Q6,10 -10,4 Z" fill="#ff4d79" />
+            </g>
+        </svg>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 6: TOP-RIGHT FLOATING CONTROLS (MUSIC, GIFT MODE, STUDIO)       -->
+    <!-- ===================================================================== -->
+    <header class="fixed top-4 right-4 z-40 flex items-center gap-2.5">
+        <!-- Music Box Synthesizer Button -->
+        <button id="musicToggleBtn"
+            class="glass-pill hover:bg-rose-900/80 text-rose-100 px-3.5 py-2 rounded-full text-xs font-semibold flex items-center gap-2 transition-all hover:scale-105">
+            <span id="musicStatusDot" class="w-2 h-2 rounded-full bg-rose-400"></span>
+            <span id="musicBtnLabel">🎵 Play Melody</span>
+        </button>
+
+        <!-- Gift Mode Toggle (Hides Edit Buttons for Clean Presentation) -->
+        <button id="giftModeToggleBtn"
+            class="glass-pill hover:bg-rose-900/80 text-amber-200 px-3.5 py-2 rounded-full text-xs font-semibold flex items-center gap-1.5 transition-all hover:scale-105"
+            title="Hide or Show Customization Controls">
+            <span id="giftModeIcon">🎁</span>
+            <span id="giftModeLabel" class="hidden sm:inline">Gift Mode</span>
+        </button>
+
+        <!-- Customize Gift Studio Drawer Trigger -->
+        <button id="openStudioBtn"
+            class="edit-only-ui bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white border border-amber-200/60 px-4 py-2 rounded-full text-xs font-bold tracking-wide shadow-lg flex items-center gap-1.5 transition-all hover:scale-105">
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
+            <span>Customize Gift</span>
+        </button>
+    </header>
+
+    <!-- Bottom-Left Live Status Counter (Caught Hearts & Spawned Memories) -->
+    <div class="fixed bottom-4 left-4 z-30 pointer-events-none hidden sm:flex items-center gap-2">
+        <div class="glass-pill px-4 py-2 rounded-full text-xs text-rose-200/90 flex items-center gap-3">
+            <span>📸 Memories Spawned: <strong id="memoriesCountBadge" class="text-amber-300">0</strong></span>
+            <span class="text-rose-400/50">|</span>
+            <span>🍁 Falling Heart Leaves: <strong class="text-rose-400">Click Any Leaf for Promise</strong></span>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 7: INTERACTIVE LIVE PROMISE LETTER MODAL                        -->
+    <!-- ===================================================================== -->
+    <div id="promiseModalBackdrop" class="promise-modal-backdrop" role="dialog" aria-modal="true"
+        aria-labelledby="promiseModalTitle">
+        <div class="parchment-letter p-6 sm:p-9">
+            <!-- Close Modal Button -->
+            <button id="closePromiseModalBtn"
+                class="absolute top-4 right-4 w-9 h-9 rounded-full bg-rose-900/15 hover:bg-rose-900/30 text-rose-950 flex items-center justify-center font-bold text-lg transition-colors"
+                title="Close Letter">
+                ✕
+            </button>
+
+            <!-- Ornate Wax Seal & Header -->
+            <div class="flex flex-col items-center text-center border-b-2 border-amber-600/30 pb-5 mb-6">
+                <div
+                    class="w-16 h-16 rounded-full bg-gradient-to-br from-rose-600 via-red-700 to-rose-950 border-2 border-amber-400 shadow-xl flex items-center justify-center mb-3 animate-bounce">
+                    <span class="text-2xl">💌</span>
+                </div>
+                <span class="text-xs uppercase tracking-[0.3em] text-rose-700 font-bold">
+                    Caught From Our Eternal Love Tree
+                </span>
+                <h2 id="promiseModalTitle" class="font-cinzel text-2xl sm:text-3xl font-black text-rose-950 mt-1">
+                    My Sacred Promise Letter
+                </h2>
+                <p id="promiseModalSubheader" class="font-script text-2xl sm:text-3xl text-rose-700 mt-0.5">
+                    From Ganesh to My Dearest Kalaivani
+                </p>
+            </div>
+
+            <!-- Live Typewriter Letter Body -->
+            <div class="bg-white/70 border border-amber-500/40 rounded-2xl p-5 sm:p-6 shadow-inner mb-6 relative">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-xs font-semibold uppercase tracking-wider text-rose-800/70">
+                        ✒️ Live Handwritten Vow
+                    </span>
+                    <div class="flex items-center gap-3">
+                        <button id="toggleInlineEditLetterBtn"
+                            class="edit-only-ui text-xs font-semibold text-amber-900 bg-amber-200/80 hover:bg-amber-300 px-2.5 py-1 rounded-full transition">
+                            ✏️ Edit Live
+                        </button>
+                        <button id="replayTypewriterBtn"
+                            class="text-xs font-semibold text-rose-700 hover:text-rose-950 underline">
+                            Replay Typewriter ↻
+                        </button>
+                    </div>
+                </div>
+                <p id="typewriterLetterContainer"
+                    class="font-serif-luxury text-lg sm:text-xl leading-relaxed text-rose-950 italic min-h-[120px] whitespace-pre-line">
+                </p>
+                <!-- Inline Live Editor inside the Promise Modal -->
+                <div id="inlineLetterEditorBox" class="hidden mt-3 pt-3 border-t border-amber-500/30">
+                    <textarea id="inlinePromiseTextarea" rows="5"
+                        class="w-full bg-white/90 border border-rose-400 rounded-xl p-3 text-sm text-rose-950 font-serif-luxury leading-relaxed focus:outline-none focus:border-rose-700"></textarea>
+                    <div class="flex justify-end mt-2">
+                        <button id="saveInlineLetterBtn"
+                            class="bg-rose-700 hover:bg-rose-800 text-amber-100 text-xs font-bold px-4 py-1.5 rounded-full shadow">
+                            ✓ Save & Replay Letter
+                        </button>
+                    </div>
+                </div>
+                <div id="promiseSignatureLine" class="mt-4 text-right font-script text-2xl sm:text-3xl text-rose-800">
+                    Forever Yours, Ganesh ♥
+                </div>
+            </div>
+
+            <!-- Interactive Sacred Promises Checklist -->
+            <div class="mb-6">
+                <h3 class="text-xs font-bold uppercase tracking-[0.2em] text-rose-800 mb-3 text-center">
+                    ✦ Click Each Promise to Seal Our Vows ✦
+                </h3>
+                <div id="promiseVowsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+                    <!-- Populated dynamically by JS -->
+                </div>
+            </div>
+
+            <!-- Interactive "Seal Our Forever Promise" Heart Button -->
+            <div class="flex flex-col items-center justify-center pt-2 border-t border-amber-600/30">
+                <button id="sealForeverBtn"
+                    class="bg-gradient-to-r from-rose-700 via-red-600 to-rose-700 hover:from-rose-600 hover:to-red-500 text-amber-100 border-2 border-amber-300 font-cinzel font-bold text-sm sm:text-base px-8 py-3.5 rounded-full shadow-xl flex items-center gap-3 transition-all transform hover:scale-105 active:scale-95">
+                    <span>❤️</span>
+                    <span id="sealForeverBtnText">Seal This Promise With A Shower Of Hearts</span>
+                </button>
+                <p id="sealedTimestampText" class="text-xs text-rose-800/80 font-medium mt-2.5">
+                    Every falling leaf carries another reason I love you.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- LAYER 8: LIVE CUSTOMIZATION STUDIO DRAWER (FOR CLIENT SETUP)          -->
+    <!-- ===================================================================== -->
+    <aside id="customizationDrawer"
+        class="fixed inset-y-0 right-0 w-full max-w-md bg-rose-950/95 backdrop-blur-2xl border-l border-amber-300/30 z-50 transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col text-rose-50 shadow-2xl">
+        <!-- Drawer Header -->
+        <div class="p-5 border-b border-rose-800/80 flex items-center justify-between bg-black/30">
+            <div>
+                <h2 class="font-cinzel text-lg font-bold text-amber-300">🌹 Gift Customization Studio</h2>
+                <p class="text-xs text-rose-200/75">Personalize names, couple frames, click-photos & promise letter</p>
+            </div>
+            <button id="closeStudioBtn"
+                class="w-8 h-8 rounded-full bg-rose-900/80 hover:bg-rose-700 text-rose-100 flex items-center justify-center font-bold">
+                ✕
+            </button>
+        </div>
+
+        <!-- Drawer Scrollable Form -->
+        <div class="p-5 overflow-y-auto flex-1 space-y-6 text-sm">
+
+            <!-- 1. Background Glowing Names -->
+            <div class="bg-rose-900/40 border border-rose-700/50 rounded-2xl p-4 space-y-3">
+                <h3 class="font-bold text-amber-300 text-xs uppercase tracking-wider">1. Glowing Background Couple Names
+                </h3>
+                <div class="grid grid-cols-2 gap-3">
+                    <div>
+                        <label class="block text-xs text-rose-200 mb-1">Partner 1 Name (Male)</label>
+                        <input id="inputPartner1Name" type="text" value="GANESH"
+                            class="w-full bg-black/40 border border-rose-600/60 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-amber-300" />
+                    </div>
+                    <div>
+                        <label class="block text-xs text-rose-200 mb-1">Partner 2 Name (Female)</label>
+                        <input id="inputPartner2Name" type="text" value="KALAIVANI"
+                            class="w-full bg-black/40 border border-rose-600/60 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-amber-300" />
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs text-rose-200 mb-1">Background Glowing Subtitle</label>
+                    <input id="inputBgTagline" type="text" value="Every Heartbeat Whispers Your Name"
+                        class="w-full bg-black/40 border border-rose-600/60 rounded-lg px-3 py-2 text-white focus:outline-none focus:border-amber-300" />
+                </div>
+            </div>
+
+            <!-- 2. Centerpiece Couple Frame Photos -->
+            <div class="bg-rose-900/40 border border-rose-700/50 rounded-2xl p-4 space-y-3">
+                <h3 class="font-bold text-amber-300 text-xs uppercase tracking-wider">2. Dual Couple Frame Photos</h3>
+                <p class="text-xs text-rose-200/80">Upload both photos for the centerpiece rose-wrapped frames:</p>
+                <div class="grid grid-cols-2 gap-3">
+                    <label for="uploadPartner1Input"
+                        class="cursor-pointer bg-rose-800/70 hover:bg-rose-700 border border-amber-300/40 rounded-xl p-3 text-center transition">
+                        <div class="text-lg mb-1">🤵</div>
+                        <div class="text-xs font-semibold text-amber-200">Upload Left Frame</div>
+                    </label>
+                    <label for="uploadPartner2Input"
+                        class="cursor-pointer bg-rose-800/70 hover:bg-rose-700 border border-amber-300/40 rounded-xl p-3 text-center transition">
+                        <div class="text-lg mb-1">👰</div>
+                        <div class="text-xs font-semibold text-amber-200">Upload Right Frame</div>
+                    </label>
+                </div>
+            </div>
+
+            <!-- 3. Click-Anywhere Floating Photos Manager -->
+            <div class="bg-rose-900/40 border border-rose-700/50 rounded-2xl p-4 space-y-3">
+                <div class="flex items-center justify-between">
+                    <h3 class="font-bold text-amber-300 text-xs uppercase tracking-wider">3. Click-Anywhere Memory
+                        Photos</h3>
+                    <span id="clickPhotoPoolCount" class="text-xs bg-rose-800 px-2 py-0.5 rounded-full text-amber-200">6
+                        Photos</span>
+                </div>
+                <p class="text-xs text-rose-200/80">
+                    Whenever anyone clicks anywhere on the screen, a photo from this gallery spawns at their cursor with
+                    hearts! Upload your girlfriend's & couple's photos here:
+                </p>
+                <div class="flex gap-2">
+                    <label for="uploadClickPhotosInput"
+                        class="flex-1 cursor-pointer bg-gradient-to-r from-rose-600 to-pink-600 hover:from-rose-500 hover:to-pink-500 text-white font-semibold py-2.5 px-4 rounded-xl text-center text-xs shadow transition">
+                        + Upload Multiple Click Photos
+                    </label>
+                    <input id="uploadClickPhotosInput" type="file" accept="image/*" multiple class="hidden" />
+                    <button id="resetClickPhotosBtn"
+                        class="bg-black/40 hover:bg-black/60 border border-rose-700 text-rose-200 px-3 py-2 rounded-xl text-xs"
+                        title="Reset to Default Illustrated Memories">
+                        Reset
+                    </button>
+                </div>
+                <!-- Mini Thumbnails Preview -->
+                <div id="clickPhotosThumbGrid" class="grid grid-cols-4 gap-2 pt-2"></div>
+            </div>
+
+            <!-- 4. Live Promise Letter Content -->
+            <div class="bg-rose-900/40 border border-rose-700/50 rounded-2xl p-4 space-y-3">
+                <h3 class="font-bold text-amber-300 text-xs uppercase tracking-wider">4. Promise Letter Text</h3>
+                <textarea id="inputPromiseLetterText" rows="5"
+                    class="w-full bg-black/40 border border-rose-600/60 rounded-xl p-3 text-xs text-white leading-relaxed focus:outline-none focus:border-amber-300">My Dearest Kalaivani,
+
+Just like this eternal love tree sheds glowing crimson hearts, my heart beats only for you every single moment. Through every season of life, I promise to stand beside you, hold your hand, celebrate your smiles, and love you deeper with every sunrise.
+
+You are my today, my tomorrow, and my forever.</textarea>
+            </div>
+        </div>
+
+        <!-- Drawer Footer -->
+        <div class="p-4 border-t border-rose-800/80 bg-black/40 flex items-center justify-between gap-3">
+            <button id="enterGiftModeFromStudioBtn"
+                class="flex-1 bg-amber-400 hover:bg-amber-300 text-rose-950 font-bold py-2.5 px-4 rounded-xl text-xs shadow-lg transition">
+                🎁 Activate Clean Gift Mode
+            </button>
+        </div>
+    </aside>
+
+    <!-- ===================================================================== -->
+    <!-- COMPLETE APPLICATION JAVASCRIPT                                       -->
+    <!-- ===================================================================== -->
+    <script>
+        /***********************************************************************
+         * 1. ROMANTIC SVG ART GENERATORS (Rich Out-of-the-Box Fallbacks)
+         ***********************************************************************/
+        function createRomanticPortraitSVG(title, subtitle, bgStart, bgEnd, silhouetteType) {
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 520" width="400" height="520">
+                <defs>
+                    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                        <stop offset="0%" stop-color="${bgStart}"/>
+                        <stop offset="100%" stop-color="${bgEnd}"/>
+                    </linearGradient>
+                    <radialGradient id="glow" cx="50%" cy="38%" r="45%">
+                        <stop offset="0%" stop-color="#ffd166" stop-opacity="0.65"/>
+                        <stop offset="60%" stop-color="#ff2a5f" stop-opacity="0.25"/>
+                        <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+                    </radialGradient>
+                </defs>
+                <rect width="400" height="520" fill="url(#bg)"/>
+                <circle cx="200" cy="200" r="170" fill="url(#glow)"/>
+                <!-- Floating ambient hearts -->
+                <path d="M90,110 C90,102 80,98 76,105 C72,98 62,102 62,110 C62,120 76,128 76,128 C76,128 90,120 90,110 Z" fill="#ff7597" opacity="0.5"/>
+                <path d="M335,130 C335,122 325,118 321,125 C317,118 307,122 307,130 C307,140 321,148 321,148 C321,148 335,140 335,130 Z" fill="#ffd166" opacity="0.55"/>
+                <path d="M120,320 C120,314 112,310 109,316 C106,310 98,314 98,320 C98,327 109,334 109,334 C109,334 120,327 120,320 Z" fill="#ff4d79" opacity="0.45"/>
+                ${silhouetteType === 'male' ? `
+                    <!-- Stylized Romantic Gentleman Portrait -->
+                    <circle cx="200" cy="185" r="52" fill="#fce7f3" stroke="#ffd166" stroke-width="3"/>
+                    <path d="M150,170 Q180,120 245,155 Q255,175 248,185 Q215,155 155,180 Z" fill="#2b0918"/>
+                    <path d="M115,380 C120,285 160,255 200,255 C240,255 280,285 285,380 Z" fill="#3a0ca3" opacity="0.35"/>
+                    <path d="M110,395 C118,280 155,255 200,255 C245,255 282,280 290,395 Z" fill="#4a071e" stroke="#ffd166" stroke-width="2.5"/>
+                    <!-- Rose Boutonniere -->
+                    <circle cx="235" cy="315" r="12" fill="#ff1e56" stroke="#ffd166" stroke-width="1.5"/>
+                ` : silhouetteType === 'female' ? `
+                    <!-- Stylized Romantic Queen Portrait -->
+                    <path d="M135,245 Q125,130 200,125 Q275,130 265,245 Q240,275 160,275 Z" fill="#2d0615"/>
+                    <circle cx="200" cy="190" r="48" fill="#ffe4e9" stroke="#ffd166" stroke-width="3"/>
+                    <!-- Tiara / Rose Crown -->
+                    <circle cx="175" cy="142" r="10" fill="#ff1e56"/>
+                    <circle cx="200" cy="136" r="13" fill="#ff4d79" stroke="#ffd166" stroke-width="1.5"/>
+                    <circle cx="225" cy="142" r="10" fill="#ff1e56"/>
+                    <path d="M115,395 C130,285 162,262 200,262 C238,262 270,285 285,395 Z" fill="#990a2c" stroke="#ffd166" stroke-width="2.5"/>
+                ` : `
+                    <!-- Couple Embrace Silhouette for Click-Spawn Memories -->
+                    <circle cx="200" cy="200" r="95" fill="#ffd166" opacity="0.18"/>
+                    <circle cx="176" cy="190" r="34" fill="#ffe4e9"/>
+                    <circle cx="226" cy="198" r="32" fill="#ffe4e9"/>
+                    <path d="M128,360 C135,265 168,242 202,242 C236,242 268,265 275,360 Z" fill="#b90e38" stroke="#ffd166" stroke-width="2"/>
+                    <path d="M214,132 C214,120 198,114 192,124 C186,114 170,120 170,132 C170,148 192,162 192,162 C192,162 214,148 214,132 Z" fill="#ff1e56" stroke="#ffd166" stroke-width="2"/>
+                `}
+                <text x="200" y="430" text-anchor="middle" fill="#ffd166" font-family="Georgia, serif" font-size="22" font-weight="bold">${title}</text>
+                <text x="200" y="458" text-anchor="middle" fill="#ffc2d1" font-family="Georgia, serif" font-size="15" font-style="italic">${subtitle}</text>
+            </svg>`;
+            return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+        }
+
+        /***********************************************************************
+         * 2. APPLICATION STATE & DEFAULT DATA
+         ***********************************************************************/
+        const appState = {
+            partner1Name: 'GANESH',
+            partner2Name: 'KALAIVANI',
+            bgTagline: 'Every Heartbeat Whispers Your Name',
+            partner1Photo: 'photos/photo7_ganesh_solo.jpg',
+            partner2Photo: 'photos/photo3_vani_purple.jpg',
+            clickMemories: [
+                {
+                    src: 'photos/photo1_couple_selfie.jpg',
+                    caption: 'Ganesh ♥ Kalaivani — Together Always'
+                },
+                {
+                    src: 'photos/photo2_sleeping.jpg',
+                    caption: 'Peaceful Moments With You'
+                },
+                {
+                    src: 'photos/photo3_vani_purple.jpg',
+                    caption: 'My Beautiful Queen ♥'
+                },
+                {
+                    src: 'photos/photo4_couple_blue.jpg',
+                    caption: 'Side By Side Forever'
+                },
+                {
+                    src: 'photos/photo5_vani_saree_looking.jpg',
+                    caption: 'Eternal Grace & Beauty'
+                },
+                {
+                    src: 'photos/photo6_vani_saree_smile.jpg',
+                    caption: 'Your Smile, My Whole World'
+                }
+            ],
+            clickPhotoIndex: 0,
+            spawnedCount: 0,
+            promiseLetterText: `My Dearest Kalaivani,\n\nJust like this eternal love tree sheds glowing crimson hearts, my heart beats only for you every single moment. Through every season of life, I promise to stand beside you, hold your hand, celebrate your smiles, and love you deeper with every sunrise.\n\nYou are my today, my tomorrow, and my forever.`,
+            promisesList: [
+                { id: 1, text: 'I promise to listen to your heart and cherish your dreams every single day, Kalaivani.', sealed: true },
+                { id: 2, text: 'I promise to hold your hand through every storm and dance with you in the rain.', sealed: true },
+                { id: 3, text: 'I promise to make you smile even on your hardest days and be your safe haven.', sealed: false },
+                { id: 4, text: 'I promise to choose you, honor you, and love you unconditionally forever.', sealed: false }
+            ]
+        };
+
+        /***********************************************************************
+         * 3. WEB AUDIO API ROMANTIC MUSIC BOX & SOUND EFFECTS SYNTHESIZER
+         ***********************************************************************/
+        class RomanticAudioEngine {
+            constructor() {
+                this.ctx = null;
+                this.isPlaying = false;
+                this.melodyTimer = null;
+                this.noteStep = 0;
+                // Romantic arpeggiated music box notes (F Major / D Minor emotional progression)
+                this.melodyNotes = [
+                    523.25, 659.25, 783.99, 1046.50, // C5, E5, G5, C6
+                    440.00, 523.25, 659.25, 880.00,  // A4, C5, E5, A5
+                    349.23, 440.00, 523.25, 698.46,  // F4, A4, C5, F5
+                    392.00, 493.88, 587.33, 783.99   // G4, B4, D5, G5
+                ];
+            }
+
+            init() {
+                if (!this.ctx) {
+                    const AudioCtx = window.AudioContext || window.webkitAudioContext;
+                    if (AudioCtx) this.ctx = new AudioCtx();
+                }
+                if (this.ctx && this.ctx.state === 'suspended') {
+                    this.ctx.resume();
+                }
+            }
+
+            playChime(freq = 659.25, duration = 1.4, volume = 0.08, type = 'sine') {
+                try {
+                    this.init();
+                    if (!this.ctx) return;
+                    const now = this.ctx.currentTime;
+                    const osc = this.ctx.createOscillator();
+                    const gain = this.ctx.createGain();
+                    osc.type = type;
+                    osc.frequency.setValueAtTime(freq, now);
+
+                    gain.gain.setValueAtTime(0.0001, now);
+                    gain.gain.exponentialRampToValueAtTime(volume, now + 0.03);
+                    gain.gain.exponentialRampToValueAtTime(0.0001, now + duration);
+
+                    osc.connect(gain);
+                    gain.connect(this.ctx.destination);
+                    osc.start(now);
+                    osc.stop(now + duration);
+                } catch (e) {
+                    // Ignore audio context restrictions if not yet interacted
+                }
+            }
+
+            playPhotoSpawnSparkle() {
+                const freqs = [587.33, 783.99, 987.77, 1174.66];
+                freqs.forEach((f, idx) => {
+                    setTimeout(() => this.playChime(f, 0.55, 0.05, 'triangle'), idx * 45);
+                });
+            }
+
+            playHeartLeafCatch() {
+                const freqs = [523.25, 659.25, 783.99, 1046.50, 1318.51];
+                freqs.forEach((f, idx) => {
+                    setTimeout(() => this.playChime(f, 0.9, 0.07, 'sine'), idx * 60);
+                });
+            }
+
+            playTypewriterTick() {
+                this.playChime(920 + Math.random() * 180, 0.06, 0.015, 'sine');
+            }
+
+            toggleMelody() {
+                this.init();
+                if (this.isPlaying) {
+                    this.isPlaying = false;
+                    if (this.melodyTimer) clearInterval(this.melodyTimer);
+                    return false;
+                } else {
+                    this.isPlaying = true;
+                    this.playNextMelodyNote();
+                    this.melodyTimer = setInterval(() => this.playNextMelodyNote(), 480);
+                    return true;
+                }
+            }
+
+            playNextMelodyNote() {
+                if (!this.isPlaying) return;
+                const freq = this.melodyNotes[this.noteStep % this.melodyNotes.length];
+                this.playChime(freq, 1.8, 0.055, 'sine');
+                if (this.noteStep % 4 === 0) {
+                    // Warm bass root note
+                    this.playChime(freq * 0.5, 2.4, 0.035, 'triangle');
+                }
+                this.noteStep++;
+            }
+        }
+
+        const audioEngine = new RomanticAudioEngine();
+
+        /***********************************************************************
+         * 4. RIGHT-CORNER 3D LOVE TREE & FALLING RED HEART LEAVES ENGINE
+         ***********************************************************************/
+        const canvas = document.getElementById('loveTreeCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let cw = window.innerWidth;
+        let ch = window.innerHeight;
+        let mouseX = cw / 2;
+        let mouseY = ch / 2;
+
+        // Data structures for the Right-Corner Love Tree
+        let treeBranches = [];
+        let canopyHearts = [];
+        let fallingHeartLeaves = [];
+        let burstParticles = [];
+        let ambientBokeh = [];
+
+        function resizeCanvas() {
+            cw = window.innerWidth;
+            ch = window.innerHeight;
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            canvas.width = cw * dpr;
+            canvas.height = ch * dpr;
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            buildRightCornerLoveTree();
+        }
+
+        // Helper: Draw a lush 2D/3D Heart at (0,0)
+        function drawHeartPath(c, size) {
+            c.beginPath();
+            const topCurveHeight = size * 0.3;
+            c.moveTo(0, topCurveHeight);
+            // Left side of heart
+            c.bezierCurveTo(0, 0, -size / 2, 0, -size / 2, topCurveHeight);
+            c.bezierCurveTo(-size / 2, (size + topCurveHeight) / 2, 0, (size + topCurveHeight) / 1.45, 0, size);
+            // Right side of heart
+            c.bezierCurveTo(0, (size + topCurveHeight) / 1.45, size / 2, (size + topCurveHeight) / 2, size / 2, topCurveHeight);
+            c.bezierCurveTo(size / 2, 0, 0, 0, 0, topCurveHeight);
+            c.closePath();
+        }
+
+        // Build the Organic Love Tree anchored in the Right-Side Corner
+        function buildRightCornerLoveTree() {
+            treeBranches = [];
+            canopyHearts = [];
+
+            // Anchor the base of the trunk on the bottom-right side
+            const trunkBaseX = cw * 0.88;
+            const trunkBaseY = ch + 10;
+            const initialLen = Math.min(cw, ch) * 0.23;
+
+            // Recursive branch builder leaning gracefully into the right upper screen
+            function generateBranch(x1, y1, length, angle, depth, width) {
+                const x2 = x1 + Math.cos(angle) * length;
+                const y2 = y1 + Math.sin(angle) * length;
+
+                treeBranches.push({ x1, y1, x2, y2, width, depth });
+
+                // Populate canopy hearts along mid and outer branches
+                if (depth <= 4) {
+                    const clusterCount = depth === 0 ? 14 : 6;
+                    for (let i = 0; i < clusterCount; i++) {
+                        const spread = depth === 0 ? 68 : 42;
+                        const hx = x2 + (Math.random() - 0.5) * spread * 1.4;
+                        const hy = y2 + (Math.random() - 0.5) * spread * 1.2;
+                        const palette = [
+                            '#ff0a43', '#e0073b', '#ff2a5f', '#ff5c8a',
+                            '#b8062c', '#ff8fa3', '#d90429', '#ffd166'
+                        ];
+                        const color = palette[Math.floor(Math.random() * palette.length)];
+                        canopyHearts.push({
+                            x: hx,
+                            y: hy,
+                            baseSize: (Math.random() * 12 + 10) * (cw < 768 ? 0.78 : 1),
+                            color,
+                            rot: (Math.random() - 0.5) * 0.9,
+                            phase: Math.random() * Math.PI * 2,
+                            speed: 0.02 + Math.random() * 0.02
+                        });
+                    }
+                }
+
+                if (depth > 0) {
+                    const subLen = length * (0.74 + Math.random() * 0.08);
+                    generateBranch(x2, y2, subLen, angle - (0.32 + Math.random() * 0.16), depth - 1, width * 0.68);
+                    generateBranch(x2, y2, subLen, angle + (0.24 + Math.random() * 0.18), depth - 1, width * 0.68);
+                    if (depth === 4 || depth === 2) {
+                        generateBranch(x2, y2, subLen * 0.85, angle - 0.08, depth - 1, width * 0.58);
+                    }
+                }
+            }
+
+            // Angle -Math.PI * 0.58 curves up and slightly toward center-left from bottom-right corner
+            generateBranch(trunkBaseX, trunkBaseY, initialLen, -Math.PI * 0.57, 6, cw < 768 ? 18 : 28);
+
+            // Seed initial falling red heart leaves from the right-corner tree canopy
+            if (fallingHeartLeaves.length === 0) {
+                const count = cw < 768 ? 22 : 36;
+                for (let i = 0; i < count; i++) {
+                    fallingHeartLeaves.push(createFallingHeartLeaf(true));
+                }
+            }
+
+            // Seed background floating golden/rose bokeh
+            ambientBokeh = [];
+            for (let i = 0; i < 38; i++) {
+                ambientBokeh.push({
+                    x: Math.random() * cw,
+                    y: Math.random() * ch,
+                    r: Math.random() * 3.5 + 1,
+                    vy: -(Math.random() * 0.35 + 0.1),
+                    alpha: Math.random() * 0.55 + 0.15,
+                    color: Math.random() > 0.4 ? '#ff4d79' : '#ffd166'
+                });
+            }
+        }
+
+        function createFallingHeartLeaf(randomProgress = false) {
+            // Pick a random canopy heart on the right-side tree as the spawn origin
+            const source = canopyHearts.length > 0
+                ? canopyHearts[Math.floor(Math.random() * canopyHearts.length)]
+                : { x: cw * 0.82, y: ch * 0.28 };
+
+            const isSpecialGoldenHeart = Math.random() < 0.22;
+            const leafColors = ['#ff0a43', '#e6093d', '#ff2a5f', '#d90429', '#ff4d79', '#b5062b'];
+
+            const leaf = {
+                x: source.x + (Math.random() - 0.5) * 40,
+                y: source.y + (Math.random() - 0.5) * 30,
+                vx: -(Math.random() * 1.15 + 0.35), // Drifts gently from Right-Side Tree across the screen
+                vy: Math.random() * 1.05 + 0.65,
+                size: (isSpecialGoldenHeart ? 24 : (Math.random() * 11 + 15)) * (cw < 768 ? 0.85 : 1),
+                color: isSpecialGoldenHeart ? '#ff1e56' : leafColors[Math.floor(Math.random() * leafColors.length)],
+                borderGold: isSpecialGoldenHeart,
+                rot: (Math.random() - 0.5) * 0.8,
+                swayPhase: Math.random() * Math.PI * 2,
+                swaySpeed: 0.025 + Math.random() * 0.025,
+                swayAmp: 0.8 + Math.random() * 1.1,
+                flip3D: Math.random() * Math.PI * 2,
+                flipSpeed: 0.02 + Math.random() * 0.03,
+                hovered: false
+            };
+
+            if (randomProgress) {
+                const steps = Math.floor(Math.random() * 320);
+                leaf.x += leaf.vx * steps;
+                leaf.y += leaf.vy * steps;
+                if (leaf.y > ch + 40 || leaf.x < -40) {
+                    leaf.x = source.x;
+                    leaf.y = source.y;
+                }
+            }
+            return leaf;
+        }
+
+        // Particle burst when clicking anywhere or catching a heart
+        function createHeartBurst(x, y, count = 18) {
+            const colors = ['#ff1e56', '#ffd166', '#ff7597', '#ffffff', '#e6093d'];
+            for (let i = 0; i < count; i++) {
+                const angle = (Math.PI * 2 * i) / count + (Math.random() - 0.5) * 0.3;
+                const speed = Math.random() * 5.5 + 2;
+                burstParticles.push({
+                    x,
+                    y,
+                    vx: Math.cos(angle) * speed,
+                    vy: Math.sin(angle) * speed - 1.2,
+                    size: Math.random() * 10 + 6,
+                    color: colors[Math.floor(Math.random() * colors.length)],
+                    alpha: 1,
+                    rot: Math.random() * Math.PI,
+                    isHeart: Math.random() > 0.25
+                });
+            }
+        }
+
+        // Main 60FPS Animation Loop
+        let timeTick = 0;
+        function animateScene() {
+            timeTick += 0.016;
+            ctx.clearRect(0, 0, cw, ch);
+
+            // 1. Draw Ambient Floating Sparkles
+            for (let b of ambientBokeh) {
+                b.y += b.vy;
+                if (b.y < -10) {
+                    b.y = ch + 10;
+                    b.x = Math.random() * cw;
+                }
+                ctx.save();
+                ctx.globalAlpha = b.alpha * (0.7 + 0.3 * Math.sin(timeTick * 2 + b.x));
+                ctx.fillStyle = b.color;
+                ctx.shadowColor = b.color;
+                ctx.shadowBlur = 10;
+                ctx.beginPath();
+                ctx.arc(b.x, b.y, b.r, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+
+            // 2. Draw Right-Corner Love Tree Trunk & Branches
+            ctx.save();
+            for (let br of treeBranches) {
+                const swayOffset = (6 - br.depth) * Math.sin(timeTick * 1.4 + br.x1 * 0.01) * 1.4;
+                ctx.beginPath();
+                ctx.moveTo(br.x1, br.y1);
+                ctx.quadraticCurveTo(
+                    (br.x1 + br.x2) / 2 + swayOffset * 0.5,
+                    (br.y1 + br.y2) / 2,
+                    br.x2 + swayOffset,
+                    br.y2
+                );
+                // Warm romantic rosewood & gold-lit bark gradient
+                const grad = ctx.createLinearGradient(br.x1, br.y1, br.x2, br.y2);
+                grad.addColorStop(0, '#3b0918');
+                grad.addColorStop(0.5, '#5c1127');
+                grad.addColorStop(1, '#851836');
+                ctx.strokeStyle = grad;
+                ctx.lineWidth = br.width;
+                ctx.lineCap = 'round';
+                ctx.shadowColor = 'rgba(255, 30, 86, 0.25)';
+                ctx.shadowBlur = 8;
+                ctx.stroke();
+            }
+            ctx.restore();
+
+            // 3. Draw Lush Breathing Heart Canopy on the Right-Corner Tree
+            ctx.save();
+            for (let chLeaf of canopyHearts) {
+                const pulse = Math.sin(timeTick * 2 + chLeaf.phase) * 1.8;
+                const swayX = Math.sin(timeTick * 1.5 + chLeaf.phase) * 3.5;
+                ctx.save();
+                ctx.translate(chLeaf.x + swayX, chLeaf.y);
+                ctx.rotate(chLeaf.rot + Math.sin(timeTick + chLeaf.phase) * 0.08);
+                ctx.fillStyle = chLeaf.color;
+                ctx.shadowColor = '#ff1e56';
+                ctx.shadowBlur = 10;
+                drawHeartPath(ctx, chLeaf.baseSize + pulse);
+                ctx.fill();
+                ctx.restore();
+            }
+            ctx.restore();
+
+            // 4. Update & Draw Falling Red Heart Leaves (Interactive Promise Triggers!)
+            let anyLeafHovered = false;
+            for (let i = 0; i < fallingHeartLeaves.length; i++) {
+                const leaf = fallingHeartLeaves[i];
+                leaf.swayPhase += leaf.swaySpeed;
+                leaf.flip3D += leaf.flipSpeed;
+
+                leaf.x += leaf.vx + Math.sin(leaf.swayPhase) * leaf.swayAmp;
+                leaf.y += leaf.vy;
+
+                // Check hover distance to mouse cursor
+                const dx = mouseX - leaf.x;
+                const dy = mouseY - (leaf.y + leaf.size * 0.45);
+                const dist = Math.hypot(dx, dy);
+                leaf.hovered = dist < leaf.size * 1.35 + 10;
+                if (leaf.hovered) anyLeafHovered = true;
+
+                // Respawn back on the Right-Side Love Tree if it leaves screen
+                if (leaf.y > ch + 45 || leaf.x < -55) {
+                    fallingHeartLeaves[i] = createFallingHeartLeaf(false);
+                    continue;
+                }
+
+                // Render Falling 3D Swaying Heart Leaf
+                ctx.save();
+                ctx.translate(leaf.x, leaf.y);
+                const tiltAngle = Math.sin(leaf.swayPhase) * 0.42;
+                ctx.rotate(tiltAngle);
+                // 3D leaf flutter scale
+                const scaleX = 0.65 + 0.35 * Math.abs(Math.cos(leaf.flip3D));
+                const hoverBoost = leaf.hovered ? 1.28 : 1;
+                ctx.scale(scaleX * hoverBoost, hoverBoost);
+
+                ctx.fillStyle = leaf.color;
+                ctx.shadowColor = leaf.borderGold || leaf.hovered ? '#ffd166' : '#ff1e56';
+                ctx.shadowBlur = leaf.hovered ? 22 : 12;
+
+                drawHeartPath(ctx, leaf.size);
+                ctx.fill();
+
+                if (leaf.borderGold || leaf.hovered) {
+                    ctx.lineWidth = 2;
+                    ctx.strokeStyle = '#ffd166';
+                    ctx.stroke();
+                }
+
+                // Subtle leaf vein shine
+                ctx.fillStyle = 'rgba(255, 255, 255, 0.25)';
+                ctx.beginPath();
+                ctx.arc(-leaf.size * 0.16, leaf.size * 0.28, leaf.size * 0.1, 0, Math.PI * 2);
+                ctx.fill();
+
+                ctx.restore();
+
+                // Draw floating tooltip if user hovers directly over a falling heart leaf
+                if (leaf.hovered) {
+                    ctx.save();
+                    ctx.font = '600 12px "Plus Jakarta Sans", sans-serif';
+                    ctx.fillStyle = '#ffd166';
+                    ctx.shadowColor = '#000';
+                    ctx.shadowBlur = 6;
+                    ctx.textAlign = 'center';
+                    ctx.fillText('💌 Click for Promise', leaf.x, leaf.y - 8);
+                    ctx.restore();
+                }
+            }
+
+            // 5. Update & Draw Click-Burst Heart Particles
+            for (let i = burstParticles.length - 1; i >= 0; i--) {
+                const p = burstParticles[i];
+                p.x += p.vx;
+                p.y += p.vy;
+                p.vy += 0.12; // gentle gravity
+                p.alpha -= 0.022;
+
+                if (p.alpha <= 0) {
+                    burstParticles.splice(i, 1);
+                    continue;
+                }
+
+                ctx.save();
+                ctx.globalAlpha = Math.max(0, p.alpha);
+                ctx.translate(p.x, p.y);
+                ctx.rotate(p.rot);
+                ctx.fillStyle = p.color;
+                ctx.shadowColor = p.color;
+                ctx.shadowBlur = 10;
+                if (p.isHeart) {
+                    drawHeartPath(ctx, p.size);
+                    ctx.fill();
+                } else {
+                    ctx.beginPath();
+                    ctx.arc(0, 0, p.size * 0.35, 0, Math.PI * 2);
+                    ctx.fill();
+                }
+                ctx.restore();
+            }
+
+            requestAnimationFrame(animateScene);
+        }
+
+        /***********************************************************************
+         * 5. CLICK ANYWHERE TO SPAWN FLOATING MEMORY PHOTOS OR OPEN PROMISE
+         ***********************************************************************/
+        const spawnedPhotosLayer = document.getElementById('spawnedPhotosLayer');
+        const memoriesCountBadge = document.getElementById('memoriesCountBadge');
+
+        function spawnPhotoAtCoordinates(clientX, clientY) {
+            if (appState.clickMemories.length === 0) return;
+
+            const memoryItem = appState.clickMemories[appState.clickPhotoIndex % appState.clickMemories.length];
+            appState.clickPhotoIndex++;
+            appState.spawnedCount++;
+            memoriesCountBadge.textContent = appState.spawnedCount;
+
+            // Clamp coordinates slightly so the spawned photo stays nicely visible inside the rose frame
+            const padX = 105;
+            const padY = 125;
+            const safeX = Math.max(padX, Math.min(window.innerWidth - padX, clientX));
+            const safeY = Math.max(padY, Math.min(window.innerHeight - padY, clientY));
+
+            const startRot = (Math.random() * 28 - 14).toFixed(1) + 'deg';
+            const endRot = (Math.random() * 18 - 9).toFixed(1) + 'deg';
+            const driftX = (Math.random() * 70 - 35).toFixed(0) + 'px';
+
+            const card = document.createElement('div');
+            card.className = 'spawned-photo-card';
+            card.style.left = `${safeX}px`;
+            card.style.top = `${safeY}px`;
+            card.style.setProperty('--start-rot', startRot);
+            card.style.setProperty('--end-rot', endRot);
+            card.style.setProperty('--drift-x', driftX);
+
+            card.innerHTML = `
+                <div class="relative w-full aspect-[4/5] rounded-lg overflow-hidden bg-rose-950 border border-rose-300/60">
+                    <img src="${memoryItem.src}" alt="Spawned Memory" class="w-full h-full object-cover pointer-events-none" />
+                    <button type="button" class="pin-photo-btn absolute top-1.5 right-1.5 bg-rose-950/80 hover:bg-rose-600 text-amber-200 text-[10px] font-bold px-2 py-0.5 rounded-full border border-amber-300/50 shadow" title="Pin or Unpin this photo on screen">
+                        📌 Pin
+                    </button>
+                </div>
+                <div class="mt-1.5 text-center px-1">
+                    <p class="font-script text-lg leading-tight text-rose-900 truncate">${memoryItem.caption || 'Forever & Always ♥'}</p>
+                </div>
+                <!-- Mini Corner Rose Accent -->
+                <div class="absolute -bottom-2 -right-2 text-base pointer-events-none drop-shadow">🌹</div>
+                <div class="absolute -top-2 -left-2 text-sm pointer-events-none drop-shadow">💖</div>
+            `;
+
+            // Allow pinning the spawned photo so it stays on screen if clicked
+            const pinBtn = card.querySelector('.pin-photo-btn');
+            let removeTimer = setTimeout(() => {
+                if (!card.classList.contains('pinned')) {
+                    card.remove();
+                }
+            }, 5750);
+
+            pinBtn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                card.classList.toggle('pinned');
+                if (card.classList.contains('pinned')) {
+                    pinBtn.textContent = '💖 Pinned';
+                    clearTimeout(removeTimer);
+                } else {
+                    pinBtn.textContent = '📌 Pin';
+                    card.remove();
+                }
+            });
+
+            // Keep maximum of 14 unpinned photos in DOM for smooth performance
+            const existingCards = spawnedPhotosLayer.querySelectorAll('.spawned-photo-card:not(.pinned)');
+            if (existingCards.length > 12) {
+                existingCards[0].remove();
+            }
+
+            spawnedPhotosLayer.appendChild(card);
+            createHeartBurst(clientX, clientY, 16);
+            audioEngine.playPhotoSpawnSparkle();
+        }
+
+        // Global Stage Click Handler:
+        // 1) First checks if user clicked on a falling red heart leaf -> Opens Live Promise Letter!
+        // 2) Otherwise spawns a floating couple photo right at the click coordinates!
+        canvas.addEventListener('click', (e) => {
+            const rect = canvas.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const clickY = e.clientY - rect.top;
+
+            // Check if user clicked any falling red heart leaf (generous hit radius)
+            let hitLeafIndex = -1;
+            let minDist = Infinity;
+
+            for (let i = 0; i < fallingHeartLeaves.length; i++) {
+                const leaf = fallingHeartLeaves[i];
+                const dx = clickX - leaf.x;
+                const dy = clickY - (leaf.y + leaf.size * 0.45);
+                const dist = Math.hypot(dx, dy);
+                if (dist < leaf.size * 1.55 + 14 && dist < minDist) {
+                    minDist = dist;
+                    hitLeafIndex = i;
+                }
+            }
+
+            if (hitLeafIndex !== -1) {
+                const caughtLeaf = fallingHeartLeaves[hitLeafIndex];
+                createHeartBurst(caughtLeaf.x, caughtLeaf.y, 28);
+                audioEngine.playHeartLeafCatch();
+                // Respawn that leaf at the top of the tree
+                fallingHeartLeaves[hitLeafIndex] = createFallingHeartLeaf(false);
+                openPromiseModal();
+            } else {
+                // Clicked on open screen -> Spawn a floating memory photo!
+                spawnPhotoAtCoordinates(e.clientX, e.clientY);
+            }
+        });
+
+        /***********************************************************************
+         * 6. 3D PARALLAX FOR BACKGROUND NAMES & COUPLE PHOTO FRAMES
+         ***********************************************************************/
+        const bgNamesStage = document.getElementById('bgNamesStage');
+        const tiltCards = document.querySelectorAll('[data-tilt]');
+
+        window.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+
+            const normX = (e.clientX / window.innerWidth - 0.5) * 2;
+            const normY = (e.clientY / window.innerHeight - 0.5) * 2;
+
+            // Parallax movement for the giant 3D glowing background names
+            bgNamesStage.style.transform = `rotateY(${normX * 8}deg) rotateX(${-normY * 8}deg) translate3d(${-normX * 18}px, ${-normY * 14}px, 0)`;
+        });
+
+        tiltCards.forEach((card) => {
+            card.addEventListener('mousemove', (e) => {
+                const r = card.getBoundingClientRect();
+                const x = (e.clientX - r.left) / r.width - 0.5;
+                const y = (e.clientY - r.top) / r.height - 0.5;
+                card.style.transform = `perspective(900px) rotateY(${x * 18}deg) rotateX(${-y * 18}deg) scale(1.03)`;
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'perspective(900px) rotateY(0deg) rotateX(0deg) scale(1)';
+            });
+            // Clicking on the frame border (outside the file input button) also spawns a burst of hearts
+            card.addEventListener('click', (e) => {
+                if (e.target.tagName.toLowerCase() !== 'label' && e.target.tagName.toLowerCase() !== 'input') {
+                    createHeartBurst(e.clientX, e.clientY, 20);
+                    audioEngine.playPhotoSpawnSparkle();
+                }
+            });
+        });
+
+        /***********************************************************************
+         * 7. LIVE PROMISE LETTER MODAL & TYPEWRITER ENGINE
+         ***********************************************************************/
+        const promiseModalBackdrop = document.getElementById('promiseModalBackdrop');
+        const typewriterLetterContainer = document.getElementById('typewriterLetterContainer');
+        const promiseVowsGrid = document.getElementById('promiseVowsGrid');
+        let typewriterInterval = null;
+
+        function startTypewriterEffect(text) {
+            if (typewriterInterval) clearInterval(typewriterInterval);
+            typewriterLetterContainer.innerHTML = '';
+
+            const textSpan = document.createElement('span');
+            const cursorSpan = document.createElement('span');
+            cursorSpan.className = 'typewriter-cursor';
+
+            typewriterLetterContainer.appendChild(textSpan);
+            typewriterLetterContainer.appendChild(cursorSpan);
+
+            let idx = 0;
+            typewriterInterval = setInterval(() => {
+                if (idx < text.length) {
+                    textSpan.textContent += text.charAt(idx);
+                    if (idx % 3 === 0) audioEngine.playTypewriterTick();
+                    idx++;
+                } else {
+                    clearInterval(typewriterInterval);
+                }
+            }, 26);
+        }
+
+        function renderPromisesChecklist() {
+            promiseVowsGrid.innerHTML = '';
+            appState.promisesList.forEach((vow) => {
+                const btn = document.createElement('button');
+                btn.type = 'button';
+                btn.className = `text-left p-3.5 rounded-xl border transition-all flex items-start gap-3 ${vow.sealed
+                        ? 'bg-rose-900 text-amber-100 border-amber-400 shadow-md'
+                        : 'bg-white/80 hover:bg-rose-50 text-rose-950 border-rose-300'
+                    }`;
+                btn.innerHTML = `
+                    <span class="mt-0.5 w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold shrink-0 ${vow.sealed ? 'bg-amber-400 text-rose-950' : 'border-2 border-rose-400 text-transparent'
+                    }">✓</span>
+                    <span class="text-xs sm:text-sm font-medium leading-snug">${vow.text}</span>
+                `;
+                btn.addEventListener('click', (e) => {
+                    vow.sealed = !vow.sealed;
+                    audioEngine.playHeartLeafCatch();
+                    createHeartBurst(e.clientX, e.clientY, 15);
+                    renderPromisesChecklist();
+                });
+                promiseVowsGrid.appendChild(btn);
+            });
+        }
+
+        function openPromiseModal() {
+            promiseModalBackdrop.classList.add('active');
+            document.getElementById('promiseModalSubheader').textContent =
+                `From ${appState.partner1Name} to My Dearest ${appState.partner2Name}`;
+            document.getElementById('promiseSignatureLine').textContent =
+                `Forever Yours, ${appState.partner1Name} ♥`;
+            document.getElementById('inlinePromiseTextarea').value = appState.promiseLetterText;
+            renderPromisesChecklist();
+            startTypewriterEffect(appState.promiseLetterText);
+        }
+
+        function closePromiseModal() {
+            promiseModalBackdrop.classList.remove('active');
+            if (typewriterInterval) clearInterval(typewriterInterval);
+        }
+
+        document.getElementById('centerHeartBridgeBtn').addEventListener('click', openPromiseModal);
+        document.getElementById('openPromiseBannerBtn').addEventListener('click', openPromiseModal);
+        document.getElementById('closePromiseModalBtn').addEventListener('click', closePromiseModal);
+        document.getElementById('replayTypewriterBtn').addEventListener('click', () => {
+            startTypewriterEffect(appState.promiseLetterText);
+        });
+
+        // Inline Live Editor inside Promise Modal
+        const inlineLetterEditorBox = document.getElementById('inlineLetterEditorBox');
+        const inlinePromiseTextarea = document.getElementById('inlinePromiseTextarea');
+        document.getElementById('toggleInlineEditLetterBtn').addEventListener('click', () => {
+            inlineLetterEditorBox.classList.toggle('hidden');
+            inlinePromiseTextarea.value = appState.promiseLetterText;
+        });
+        document.getElementById('saveInlineLetterBtn').addEventListener('click', () => {
+            appState.promiseLetterText = inlinePromiseTextarea.value;
+            // Sync studio drawer textarea if it's in the DOM
+            const studioLetterTextarea = document.getElementById('inputPromiseLetterText');
+            if (studioLetterTextarea) studioLetterTextarea.value = appState.promiseLetterText;
+            inlineLetterEditorBox.classList.add('hidden');
+            startTypewriterEffect(appState.promiseLetterText);
+        });
+
+        promiseModalBackdrop.addEventListener('click', (e) => {
+            if (e.target === promiseModalBackdrop) closePromiseModal();
+        });
+
+        document.getElementById('sealForeverBtn').addEventListener('click', (e) => {
+            appState.promisesList.forEach(p => p.sealed = true);
+            renderPromisesChecklist();
+            audioEngine.playHeartLeafCatch();
+            createHeartBurst(e.clientX, e.clientY, 36);
+            const btnText = document.getElementById('sealForeverBtnText');
+            const stamp = document.getElementById('sealedTimestampText');
+            btnText.textContent = '✨ Forever Promise Sealed With Love ✨';
+            stamp.textContent = `Sealed eternally between ${appState.partner1Name} & ${appState.partner2Name} ♥`;
+        });
+
+        /***********************************************************************
+         * 8. LIVE CUSTOMIZATION STUDIO & INSTANT IMAGE UPLOADS
+         ***********************************************************************/
+        const customizationDrawer = document.getElementById('customizationDrawer');
+        const inputPartner1Name = document.getElementById('inputPartner1Name');
+        const inputPartner2Name = document.getElementById('inputPartner2Name');
+        const inputBgTagline = document.getElementById('inputBgTagline');
+        const inputPromiseLetterText = document.getElementById('inputPromiseLetterText');
+
+        function syncUIWithState() {
+            // Update Background Glowing 3D Names
+            document.getElementById('bgCoupleNamesText').innerHTML =
+                `${escapeHTML(appState.partner1Name)} <span class="text-rose-500/70">♥</span> ${escapeHTML(appState.partner2Name)}`;
+            document.getElementById('bgCoupleTaglineText').textContent = appState.bgTagline;
+
+            // Update Frame Badges & Images
+            document.getElementById('partner1NameBadge').textContent = appState.partner1Name;
+            document.getElementById('partner2NameBadge').textContent = appState.partner2Name;
+            document.getElementById('partner1Img').src = appState.partner1Photo;
+            document.getElementById('partner2Img').src = appState.partner2Photo;
+
+            // Update Promise Modal Header & Signature
+            document.getElementById('promiseModalSubheader').textContent =
+                `From ${appState.partner1Name} to My Dearest ${appState.partner2Name}`;
+            document.getElementById('promiseSignatureLine').textContent =
+                `Forever Yours, ${appState.partner1Name} ♥`;
+
+            // Update Click Photo Thumbnails in Studio
+            renderClickPhotoThumbnails();
+        }
+
+        function escapeHTML(str) {
+            return String(str).replace(/[&<>"']/g, (m) => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+            }[m]));
+        }
+
+        function renderClickPhotoThumbnails() {
+            const grid = document.getElementById('clickPhotosThumbGrid');
+            const countBadge = document.getElementById('clickPhotoPoolCount');
+            countBadge.textContent = `${appState.clickMemories.length} Photos`;
+            grid.innerHTML = '';
+
+            appState.clickMemories.forEach((item, index) => {
+                const wrap = document.createElement('div');
+                wrap.className = 'relative aspect-square rounded-lg overflow-hidden border border-rose-500/50 group';
+                wrap.innerHTML = `
+                    <img src="${item.src}" class="w-full h-full object-cover" alt="Memory thumb" />
+                    <button type="button" class="absolute inset-0 bg-black/65 opacity-0 group-hover:opacity-100 flex items-center justify-center text-xs text-rose-200 font-bold transition">
+                        ✕
+                    </button>
+                `;
+                wrap.querySelector('button').addEventListener('click', () => {
+                    if (appState.clickMemories.length > 1) {
+                        appState.clickMemories.splice(index, 1);
+                        renderClickPhotoThumbnails();
+                    }
+                });
+                grid.appendChild(wrap);
+            });
+        }
+
+        // Open / Close Customization Drawer
+        document.getElementById('openStudioBtn').addEventListener('click', () => {
+            customizationDrawer.classList.remove('translate-x-full');
+        });
+        document.getElementById('closeStudioBtn').addEventListener('click', () => {
+            customizationDrawer.classList.add('translate-x-full');
+        });
+
+        // Live Name & Letter Editing
+        inputPartner1Name.addEventListener('input', (e) => {
+            appState.partner1Name = e.target.value.trim() || 'GANESH';
+            syncUIWithState();
+        });
+        inputPartner2Name.addEventListener('input', (e) => {
+            appState.partner2Name = e.target.value.trim() || 'KALAIVANI';
+            syncUIWithState();
+        });
+        inputBgTagline.addEventListener('input', (e) => {
+            appState.bgTagline = e.target.value;
+            syncUIWithState();
+        });
+        inputPromiseLetterText.addEventListener('input', (e) => {
+            appState.promiseLetterText = e.target.value;
+        });
+
+        // Upload Partner 1 & Partner 2 Frame Photos
+        function handleSinglePhotoUpload(inputEl, targetKey) {
+            inputEl.addEventListener('change', (e) => {
+                const file = e.target.files && e.target.files[0];
+                if (!file) return;
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    appState[targetKey] = ev.target.result;
+                    // Also add uploaded couple frame photo to the click-spawn pool automatically!
+                    appState.clickMemories.unshift({
+                        src: ev.target.result,
+                        caption: `${appState.partner1Name} ♥ ${appState.partner2Name}`
+                    });
+                    syncUIWithState();
+                };
+                reader.readAsDataURL(file);
+            });
+        }
+
+        handleSinglePhotoUpload(document.getElementById('uploadPartner1Input'), 'partner1Photo');
+        handleSinglePhotoUpload(document.getElementById('uploadPartner2Input'), 'partner2Photo');
+
+        // Upload Multiple Click-Anywhere Spawn Photos
+        document.getElementById('uploadClickPhotosInput').addEventListener('change', (e) => {
+            const files = Array.from(e.target.files || []);
+            if (!files.length) return;
+
+            // Replace default illustrations on first custom batch or append
+            files.forEach((file) => {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    appState.clickMemories.unshift({
+                        src: ev.target.result,
+                        caption: `${appState.partner1Name} ♥ ${appState.partner2Name}`
+                    });
+                    appState.clickPhotoIndex = 0;
+                    renderClickPhotoThumbnails();
+                };
+                reader.readAsDataURL(file);
+            });
+        });
+
+        document.getElementById('resetClickPhotosBtn').addEventListener('click', () => {
+            appState.clickMemories = [
+                {
+                    src: createRomanticPortraitSVG('First Magical Moment', 'When my world found its light ✨', '#590826', '#1c030c', 'couple'),
+                    caption: 'Our First Magical Moment ♥'
+                },
+                {
+                    src: createRomanticPortraitSVG('Endless Laughter', 'Your smile is my favorite view 🌹', '#480ca8', '#1f0318', 'couple'),
+                    caption: 'Your Smile Is My Favorite View'
+                },
+                {
+                    src: createRomanticPortraitSVG('Under The Stars', 'Every wish I made came true in you 💫', '#6b0522', '#12020a', 'couple'),
+                    caption: 'Under The Stars With You'
+                }
+            ];
+            renderClickPhotoThumbnails();
+        });
+
+        // Music Synthesizer & Gift Mode Toggles
+        const musicToggleBtn = document.getElementById('musicToggleBtn');
+        const musicBtnLabel = document.getElementById('musicBtnLabel');
+        const musicStatusDot = document.getElementById('musicStatusDot');
+
+        musicToggleBtn.addEventListener('click', () => {
+            const playing = audioEngine.toggleMelody();
+            if (playing) {
+                musicBtnLabel.textContent = '🎶 Melody Playing';
+                musicStatusDot.className = 'w-2 h-2 rounded-full bg-emerald-400 animate-ping';
+            } else {
+                musicBtnLabel.textContent = '🎵 Play Melody';
+                musicStatusDot.className = 'w-2 h-2 rounded-full bg-rose-400';
+            }
+        });
+
+        function toggleGiftMode(forceState) {
+            const isGift = typeof forceState === 'boolean'
+                ? forceState
+                : !document.body.classList.contains('gift-mode');
+            document.body.classList.toggle('gift-mode', isGift);
+            document.getElementById('giftModeLabel').textContent = isGift ? 'Exit Gift Mode' : 'Gift Mode';
+            if (isGift) {
+                customizationDrawer.classList.add('translate-x-full');
+            }
+        }
+
+        document.getElementById('giftModeToggleBtn').addEventListener('click', () => toggleGiftMode());
+        document.getElementById('enterGiftModeFromStudioBtn').addEventListener('click', () => toggleGiftMode(true));
+
+        /***********************************************************************
+         * 9. INITIALIZATION ON WINDOW LOAD
+         ***********************************************************************/
+        window.addEventListener('resize', resizeCanvas);
+
+        window.onload = function () {
+            syncUIWithState();
+            resizeCanvas();
+            animateScene();
+        };
+    </script>
+</body>
+
+</html>
